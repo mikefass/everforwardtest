@@ -1,3 +1,14 @@
+// Collapse navbar hamburger menu on click
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("efNavbar");
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+navLinks.forEach((l) => {
+  l.addEventListener("click", () => {
+    bsCollapse.toggle();
+  });
+});
+
+// Scroll page to ID clicked
 $(document).ready(function () {
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
