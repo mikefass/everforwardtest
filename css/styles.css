@@ -211,14 +211,14 @@ textarea {
 
 /* Home sectionfor x-small devices */
 .home-section-text {
-  margin: 125px 0 0 0;
+  margin: 135px 0 0 0;
   text-align: center;
 }
 .home-section-body {
-  margin: 10px 40px auto 40px;
+  margin: 20px 30px auto 30px;
 }
 .home-section {
-  height: 250px;
+  height: 200px;
 }
 .home-section-bkg {
   width: 100%;
@@ -231,10 +231,10 @@ textarea {
   margin-top: 120px;
 }
 h1 {
-  font-size: 18px;
+  font-size: 20px;
 }
 h2 {
-  font-size: 12px;
+  font-size: 14px;
 }
 #ef-logo {
   margin: -30px -10px -30px -10px;
