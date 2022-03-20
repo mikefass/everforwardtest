@@ -215,26 +215,28 @@ textarea {
   text-align: center;
 }
 .home-section-body {
-  margin: 13px 5px auto 5px;
+  margin: 20px 5px auto 5px;
 }
 .home-section {
-  height: 170px;
+  height: 300px;
 }
 .home-section-bkg {
   width: 100%;
-  height: auto;
+  height: 400px;
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 35%;
+  opacity: 30%;
   z-index: -3;
   margin-top: 120px;
+  object-fit: cover;
+  object-position: 50% 44%;
 }
 h1 {
-  font-size: 18px;
+  font-size: 24px;
 }
 h2 {
-  font-size: 14px;
+  font-size: 18px;
 }
 #ef-logo {
   margin: -30px -10px -30px -10px;
