@@ -211,14 +211,14 @@ textarea {
 
 /* Home sectionfor x-small devices */
 .home-section-text {
-  margin: 135px 0 0 0;
+  margin: 130px 0 0 0;
   text-align: center;
 }
 .home-section-body {
-  margin: 20px 30px auto 30px;
+  margin: 14px 30px auto 30px;
 }
 .home-section {
-  height: 200px;
+  height: 170px;
 }
 .home-section-bkg {
   width: 100%;
