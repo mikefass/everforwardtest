@@ -13,41 +13,48 @@ $(document).ready(function () {
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home'], footer a[href='#top']").on(
-    "click",
-    function (event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+  jQuery(function ($) {
+    $(
+      '.navbar a[href*="#"]:not([href="#"]), footer a[href*="#"]:not([href="#"])'
+    ).click(function () {
+      var target = $(this.hash);
+      // Account for Navbar height
+      if (target.selector === "#home" || target.selector === "#top") {
+        var height = 350;
+      } else if (target.selector === "#blog") {
+        var height = 245;
+      } else if (target.selector === "#about") {
+        var height = 208;
+      } else {
+        var height = 157;
+      }
 
-        // Store hash
-        // var hash = this.hash;
-        var hash = $(this).attr("hash");
-
-        // Account for Navbar height
-        if (hash === "#home" || hash === "#top") {
-          var adjustHeight = 350;
-        } else if (hash === "#blog" || hash === "/index.html#blog") {
-          var adjustHeight = 192;
-        } else {
-          var adjustHeight = 157;
-        }
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-        $("html, body").animate(
+      $("html,body")
+        .stop()
+        .animate(
           {
-            scrollTop: $(hash).offset().top - adjustHeight,
+            scrollTop: target.offset().top - height,
           },
           900
-          function () {
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          }
         );
-      } // End if
+    });
+    if (location.hash) {
+      var id = $(location.hash);
+      // Account for Navbar height
+      if (id.selector === "#home" || id.selector === "#top") {
+        var height = 350;
+      } else if (id.selector === "#blog") {
+        var height = 245;
+      } else if (id.selector === "#about") {
+        var height = 208;
+      } else {
+        var height = 157;
+      }
     }
-  );
+    $(window).load(function () {
+      if (location.hash) {
+        $("html,body").animate({ scrollTop: id.offset().top - height }, 900);
+      }
+    });
+  });
 });
