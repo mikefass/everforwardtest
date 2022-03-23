@@ -211,7 +211,7 @@ textarea {
 
 /* Home sectionfor x-small devices */
 .home-section-text {
-  margin: 130px 0 0 0;
+  margin: 180px 0 0 0;
   text-align: center;
   color: #333;
 }
@@ -229,7 +229,7 @@ textarea {
   top: 0;
   opacity: 30%;
   z-index: -3;
-  margin-top: 120px;
+  margin-top: 158px;
   object-fit: cover;
   object-position: 50% 44%;
 }
