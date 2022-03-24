@@ -22,7 +22,7 @@ $(document).ready(function () {
       if (target.selector === "#home" || target.selector === "#top") {
         var height = 350;
       } else if (target.selector === "#blog") {
-        var height = 245;
+        var height = 195;
       } else if (target.selector === "#about") {
         var height = 208;
       } else {
