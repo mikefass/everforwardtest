@@ -44,7 +44,7 @@ $(document).ready(function () {
       if (id.selector === "#home" || id.selector === "#top") {
         var height = 350;
       } else if (id.selector === "#blog") {
-        var height = 245;
+        var height = 195;
       } else if (id.selector === "#about") {
         var height = 208;
       } else {
