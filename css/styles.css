@@ -191,6 +191,13 @@ footer a:hover {
   color: #777;
   text-decoration: none;
 }
+footer p {
+  margin-bottom: 0;
+}
+.footer-location {
+  color: #bdbdbd;
+  margin-bottom: 16px;
+}
 .form-control {
   border-radius: 0;
 }
