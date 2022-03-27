@@ -225,6 +225,12 @@ textarea {
 .home-section-body {
   margin: 40px 15px auto 15px;
 }
+.home-section-text h1 {
+  font-size: 28px;
+}
+.home-section-text h2 {
+  font-size: 22px;
+}
 .home-section {
   height: 400px;
 }
@@ -282,6 +288,12 @@ h2 {
   .home-section {
     height: 300px;
   }
+  .home-section-text h1 {
+    font-size: 26px;
+  }
+  .home-section-text h2 {
+    font-size: 20px;
+  }
   .home-section-bkg {
     margin-top: 155px;
   }
@@ -316,14 +328,20 @@ h2 {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-section-text {
-    margin: 180px 0 0 0;
+    margin: 220px 0 0 0;
     text-align: center;
   }
+  .home-section-text h1 {
+    font-size: 34px;
+  }
+  .home-section-text h2 {
+    font-size: 24px;
+  }
   .home-section-body {
-    margin: 50px 150px auto 150px;
+    margin: 50px 90px auto 90px;
   }
   .home-section {
-    height: 500px;
+    height: 470px;
   }
   .home-section-bkg {
     width: 100%;
@@ -385,6 +403,12 @@ h2 {
     margin: 210px 0 0 0;
     text-align: center;
   }
+  .home-section-text h1 {
+    font-size: 34px;
+  }
+  .home-section-text h2 {
+    font-size: 24px;
+  }
   .home-section-body {
     margin: auto 300px 80px 300px;
   }
@@ -413,6 +437,12 @@ h2 {
   .home-section-text {
     margin: 250px 0 0 0;
     text-align: center;
+  }
+  .home-section-text h1 {
+    font-size: 34px;
+  }
+  .home-section-text h2 {
+    font-size: 24px;
   }
   .home-section-body {
     margin: auto 300px 80px 300px;
@@ -445,6 +475,12 @@ h2 {
   .home-section-text {
     margin: 250px 0 0 0;
     text-align: center;
+  }
+  .home-section-text h1 {
+    font-size: 34px;
+  }
+  .home-section-text h2 {
+    font-size: 24px;
   }
   .home-section-body {
     margin: auto 400px 80px 400px;
